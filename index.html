@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassTrack - Toma el Control de tu Vida Académica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Organiza materias, controla tus evidencias y domina tu horario académico sin esfuerzo. Únete a la lista de espera de ClassTrack.">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">ClassTrack</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Domina tu vida <span class="highlight">académica</span>.</h1>
+                <p>Organiza materias, controla tus evidencias y domina tu horario sin esfuerzo. Únete a la lista de
+                    espera y sé el primero en descargarla.</p>
+
+                <div class="waitlist-form-container">
+                    <form id="waitlist-form">
+                        <!-- Campo Honeypot para evitar bots de spam -->
+                        <input type="text" name="b_email" tabindex="-1" value="" style="position: absolute; left: -5000px;" aria-hidden="true">
+                        
+                        <input type="email" id="email-input" name="email" placeholder="Tu correo electrónico..."
+                            required>
+                        <button type="submit" id="submit-btn"
+                            aria-label="Unirse a la lista de espera">Notificame</button>
+                    </form>
+                    <div id="success-message" class="hidden">
+                        ¡Listo! Te avisaremos cuando puedas descargar la app.
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="phone-frame">
+                    <div class="phone-punch-hole"></div>
+                    <img src="intefaz.png" alt="ClassTrack App" class="phone-screen" onerror="this.src='mockup.png'">
+                </div>
+                <div class="glow-bg"></div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#features" class="scroll-link" aria-label="Desplázate para descubrir más">
+                    <span class="scroll-text">Descubre más</span>
+                    <div class="mouse-icon">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Todo lo que necesitas, en tu bolsillo.</h2>
+            <div class="bento-grid">
+                <div class="bento-card card-1">
+                    <div class="card-icon">📚</div>
+                    <h3>Gestión de Materias</h3>
+                    <p>Crea, edita y organiza tus materias con colores personalizados.</p>
+                </div>
+                <div class="bento-card card-2">
+                    <div class="card-icon">⚡</div>
+                    <h3>Control de Evidencias</h3>
+                    <p>Registra tus tareas y asigna pesos porcentuales. Sabrás exactamente cuánto te falta para aprobar.
+                    </p>
+                </div>
+                <div class="bento-card card-3">
+                    <div class="card-icon">📅</div>
+                    <h3>Horario Inteligente</h3>
+                    <p>Visualiza tus clases diarias con un diseño moderno. Nunca vuelvas a perderte una sesión.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="showcase" id="how-it-works">
+            <h2 class="section-title">Descubre cómo funciona</h2>
+
+            <div class="showcase-item">
+                <div class="showcase-visual reveal-left">
+                    <img src="oscuro.png" alt="Vista Principal - Materias" class="app-screenshot">
+                    <div class="glow-bg-small"></div>
+                </div>
+                <div class="showcase-text reveal-right">
+                    <h3>Progreso en cada Materia</h3>
+                    <p>Una interfaz diseñada para cuidar tu vista con un increíble modo oscuro. Evalúa rápidamente qué
+                        tareas te faltan, el peso de cada evidencia y averigua tu puntuación final en tiempo real.
+                        Concéntrate solo en avanzar.</p>
+                </div>
+            </div>
+
+            <div class="showcase-item reverse">
+                <div class="showcase-visual reveal-right">
+                    <img src="horario.png" alt="Vista Principal - Horario" class="app-screenshot">
+                    <div class="glow-bg-small accent-secondary"></div>
+                </div>
+                <div class="showcase-text reveal-left">
+                    <h3>Tu Semana en un Vistazo</h3>
+                    <p>La sección de horarios acomoda bloques de colores brillantes según las materias que creas. Verás
+                        de forma elegante tu planificación semanal, permitiendo que navegues entre salones sin ninguna
+                        confusión y con diseño minimalista.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 ClassTrack. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
