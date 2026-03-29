@@ -490,3 +490,26 @@ footer {
         margin-bottom: 5rem;
     }
 }
+
+@media (max-width: 480px) {
+    .waitlist-form-container {
+        border-radius: 20px;
+        padding: 0.5rem;
+    }
+    
+    .waitlist-form-container form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .waitlist-form-container input[type="email"] {
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .waitlist-form-container button {
+        width: 100%;
+        border-radius: 12px;
+    }
+}
