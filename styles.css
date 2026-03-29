@@ -95,7 +95,6 @@ body::before {
 
 /* Waitlist Form */
 .waitlist-form-container {
-    background: var(--card-bg);
     border: 2px solid var(--border-color);
     border-radius: 100px;
     padding: 0.5rem;
@@ -127,6 +126,15 @@ input[type="email"] {
 
 input::placeholder {
     color: var(--text-secondary);
+}
+
+/* Evitar que el autocompletado del navegador ponga un fondo de color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--text-primary) !important;
 }
 
 button {
